@@ -15,26 +15,26 @@ import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "user")
+@Table(name = "usermy")
 public class UserEntity {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	
-	@Column
+	@Column(name =  "fullname")
 	private String fullname;
 	
-	@Column
+	@Column(name = "username")
 	private String username;
 	
-	@Column
+	@Column(name = "password")
 	private String password;
 	
-	@Column
+	@Column(name = "birthday")
 	private Date birthday;
 	
-	@Column
+	@Column(name = "address")
 	private String address;
 	
 	@ManyToMany(fetch = FetchType.EAGER)
