@@ -14,9 +14,9 @@
 	<name>WebFood</name>
 	<description>Web shop spring boot</description>
 
-	<properties>
-		<java.version>11</java.version>
-	</properties>
+<!--	<properties>-->
+<!--		<java.version>11</java.version>-->
+<!--	</properties>-->
 
 	<dependencies>
 		<dependency>
