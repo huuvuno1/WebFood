@@ -34,6 +34,13 @@ public class UserService implements UserDetailsService{
 		MyUser myUser = new MyUser(user.getUsername(), user.getPassword(), true, true,
 				true, true, grantedAuthorities);
 		myUser.setFullname(user.getFullname());
+
+
 		return myUser;
+	}
+
+	public void saveAccount(UserEntity account)
+	{
+		userRepository.save(account);
 	}
 }
